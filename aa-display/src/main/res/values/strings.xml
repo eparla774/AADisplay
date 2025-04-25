@@ -11,4 +11,26 @@
     <string name="need_LSPosed">Need LSPosed</string>
     <string name="not_activated">Not Activated</string>
     <string name="reboot">Reboot</string>
+    <string name="SettingsCategoryBasic">Basic settings</string>
+    <string name="SettingsAutoOpenTitle">Auto-open</string>
+    <string name="SettingsAutoOpenSummary">Auto-open specified app on connection</string>
+    <string name="SettingsAutoOpenPackageName">Auto-open app package name</string>
+    <string name="SettingsAndroidAutoDpi">Android Auto DPI</string>
+    <string name="SettingsVirtualDisplayDpi">Virtual Display DPI</string>
+    <string name="SettingsDestructionDelay">Destruction Delay</string>
+    <string name="SettingsReplaceLockScreenTitle">Don`t lock screen</string>
+    <string name="SettingsReplaceLockScreenSummary">on sleep or power button press</string>
+    <string name="SettingsCloseLauncherDashboard">Prevent AA from splitting screen</string>
+    <string name="SettingsForceRightAngle">Force right angle</string>
+    <string name="SettingsImePolicy">Where to display IME</string>
+    <string name="SettingsImeDisplayVirtualScreen">Virtual screen</string>
+    <string name="SettingsImeDisplayMainScreen">Main screen</string>
+    <string name="SettingsVoiceAssistantShell">Voice assistant shell command</string>
+    <string name="SettingsCategoryShell">Run shell commands</string>
+    <string name="SettingsShellCreateVirtualDisplayBefore">Before creating virtual display</string>
+    <string name="SettingsShellDestroyVirtualDisplayAfter">After destroying virtual display</string>
+    <string name="SettingsCategoryPhysicalBtn">Physical Button</string>
+    <string name="SettingsCategoryAndroidAutoProps">Android Auto properties</string>
+    <string name="props">properties</string>
+    <string name="Settings"></string>
 </resources>

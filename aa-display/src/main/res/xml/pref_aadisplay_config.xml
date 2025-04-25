@@ -4,14 +4,14 @@
 
     <PreferenceCategory
         app:key="CategoryBase"
-        app:title="基础配置"
+        app:title="@string/SettingsCategoryBasic"
         app:iconSpaceReserved="false">
 
         <rikka.material.preference.MaterialSwitchPreference
             app:defaultValue="true"
             app:key="AutoOpen"
-            app:title="自动打开"
-            app:summary="连接Android Auto后自动打开应用"
+            app:title="@string/SettingsAutoOpenTitle"
+            app:summary="@string/SettingsAutoOpenSummary"
             app:iconSpaceReserved="false"/>
 
         <EditTextPreference
@@ -19,21 +19,21 @@
             app:singleLineTitle="true"
             app:defaultValue="com.wow.carlauncher.mini"
             app:key="LauncherPackage"
-            app:title="首选项包名"
+            app:title="@string/SettingsAutoOpenPackageName"
             app:useSimpleSummaryProvider="true"
             app:iconSpaceReserved="false"/>
 
         <EditTextPreference
             android:inputType="number"
             app:key="AndroidAutoDpi"
-            app:title="AndroidAutoDpi"
+            app:title="@string/SettingsAndroidAutoDpi"
             app:useSimpleSummaryProvider="true"
             app:iconSpaceReserved="false" />
 
         <EditTextPreference
             android:inputType="number"
             app:key="VirtualDisplayDpi"
-            app:title="VirtualDisplayDpi"
+            app:title="@string/SettingsVirtualDisplayDpi"
             app:useSimpleSummaryProvider="true"
             app:iconSpaceReserved="false" />
 
@@ -41,35 +41,33 @@
             android:inputType="number"
             app:defaultValue="180"
             app:key="DelayDestroyTime"
-            app:title="延迟销毁时间"
+            app:title="@string/SettingsDestructionDelay"
             app:useSimpleSummaryProvider="true"
             app:iconSpaceReserved="false" />
 
         <rikka.material.preference.MaterialSwitchPreference
             app:defaultValue="false"
             app:key="ScreenOffReplaceLockScreen"
-            app:title="仅熄屏"
-            app:summary="电源键替换仅熄屏"
+            app:title="@string/SettingsReplaceLockScreenTitle"
+            app:summary="@string/SettingsReplaceLockScreenSummary"
             app:iconSpaceReserved="false"/>
 
         <rikka.material.preference.MaterialSwitchPreference
             app:defaultValue="true"
             app:key="CloseLauncherDashboard"
-            app:title="阻止AA分屏切换"
-            app:summary=""
+            app:title="@string/SettingsCloseLauncherDashboard"
             app:iconSpaceReserved="false"/>
 
         <rikka.material.preference.MaterialSwitchPreference
             app:defaultValue="true"
             app:key="ForceRightAngle"
-            app:title="强制直角"
-            app:summary=""
+            app:title="@string/SettingsForceRightAngle"
             app:iconSpaceReserved="false"/>
 
         <ListPreference
             app:key="DisplayImePolicy"
             app:defaultValue="1"
-            app:title="ImePolicy"
+            app:title="@string/SettingsImePolicy"
             app:entries="@array/ime_policy_keys"
             app:entryValues="@array/ime_policy_values"
             app:useSimpleSummaryProvider="true"
@@ -80,7 +78,7 @@
             app:singleLineTitle="true"
             app:defaultValue="am start com.miui.voiceassist/com.xiaomi.voiceassistant.CTAAlertActivity"
             app:key="VoiceAssistShell"
-            app:title="语音助手Shell"
+            app:title="@string/SettingsVoiceAssistantShell"
             app:useSimpleSummaryProvider="true"
             app:iconSpaceReserved="false"/>
 
@@ -88,20 +86,20 @@
 
     <PreferenceCategory
         app:key="CategoryShell"
-        app:title="Shell命令"
+        app:title="@string/SettingsCategoryShell"
         app:iconSpaceReserved="false">
 
         <EditTextPreference
             android:inputType="textMultiLine"
             app:key="CreateVirtualDisplayBefore"
-            app:title="创建虚拟屏前执行"
+            app:title="@string/SettingsShellCreateVirtualDisplayBefore"
             app:useSimpleSummaryProvider="true"
             app:iconSpaceReserved="false"/>
 
         <EditTextPreference
             android:inputType="textMultiLine"
             app:key="DestroyVirtualDisplayAfter"
-            app:title="销毁虚拟屏后执行"
+            app:title="@string/SettingsShellDestroyVirtualDisplayAfter"
             app:useSimpleSummaryProvider="true"
             app:iconSpaceReserved="false"/>
 
@@ -109,14 +107,14 @@
 
     <PreferenceCategory
         app:key="CategoryPhysicalBtn"
-        app:title="实体按钮"
+        app:title="@string/SettingsCategoryPhysicalBtn"
         app:summary="TODO"
         app:iconSpaceReserved="false">
     </PreferenceCategory>
 
     <PreferenceCategory
         app:key="CategoryAndroidAuto"
-        app:title="AndroidAuto配置"
+        app:title="@string/SettingsCategoryAndroidAutoProps"
         app:summary="[com.google.android."
         app:singleLineTitle="true"
         app:iconSpaceReserved="false">
@@ -124,7 +122,7 @@
         <EditTextPreference
             android:inputType="textMultiLine"
             app:key="ComGoogleAndroidProjectionGearheadProps"
-            app:title="projection.gearhead] properties"
+            app:title="@{`projection.gearhead]`+@string/props}"
             app:useSimpleSummaryProvider="true"
             app:iconSpaceReserved="false"/>
 
